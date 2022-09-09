@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<p1> The text length of 'Hello' is: </p1>
+<p id="demo"></p>
+
+    <script>
+    let text = "hello";
+    document.getElementById("demo").innerHTML = text.length;
+    </script>
+
+
+<p1> Slicing: </p1>
+<p id="demo2"></p>
+
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo2").innerHTML = str.slice(7,13); 
+</script>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo3">Please visit the kitchen then turn left!</p>
+<script>
+function myFunction() {
+  let text = document.getElementById("demo3").innerHTML; 
+  document.getElementById("demo3").innerHTML =
+  text.replace("kitchen","hall");
+}
+</script>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo4">Hello!</p>
+<script>
+function myFunction() {
+  let text = document.getElementById("demo4").innerHTML;
+  document.getElementById("demo4").innerHTML =
+  text.toUpperCase();
+}
+</script>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo5">Hello World!</p>
+<script>
+function myFunction() {
+  let text = document.getElementById("demo5").innerHTML;
+  document.getElementById("demo5").innerHTML =
+  text.toLowerCase();
+}
+</script>
+
+</body>
+</html>
